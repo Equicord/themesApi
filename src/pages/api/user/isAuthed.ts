@@ -9,7 +9,7 @@ export default async function POST(req: NextApiRequest, res: NextApiResponse) {
     const { token } = req.body;
 
     if (!token) {
-        return res.status(400).json({ message: "Cannot check authorization without unique token, if you think that this is a bug report it to https://github.com/faf4a/themesApi" });
+        return res.status(400).json({ message: "Cannot check authorization without unique token, if you think that this is a bug report it to https://github.com/Equicord/EquiThemesAPI" });
     }
 
     const user = await isAuthed(token);

@@ -11,7 +11,7 @@ export default async function GET(req: NextApiRequest, res: NextApiResponse) {
     const { code } = req.query;
 
     if (!code) {
-        return res.status(400).json({ message: "Cannot authorize without token, check if the token is missing, if you think that this is a bug report it to https://github.com/faf4a/themesApi" });
+        return res.status(400).json({ message: "Cannot authorize without token, check if the token is missing, if you think that this is a bug report it to https://github.com/Equicord/EquiThemesAPI" });
     }
 
     // turn access code into something useful
@@ -68,7 +68,7 @@ export default async function GET(req: NextApiRequest, res: NextApiResponse) {
     res.setHeader("Content-Type", "application/json");
 
     if (!authKey) {
-        res.status(500).json({ status: 500, message: "Failed to generate a user token, if you think that this is a bug feel free to open an issue at https://github.com/faf4a/themesApi" });
+        res.status(500).json({ status: 500, message: "Failed to generate a user token, if you think that this is a bug feel free to open an issue at https://github.com/Equicord/EquiThemesAPI" });
     } else {
         res.status(200).json({ status: 200, token: authKey });
     }

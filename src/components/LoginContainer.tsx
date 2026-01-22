@@ -60,7 +60,7 @@ export default function LoginContainer() {
                 </Typography>
                 <Typography variant="h6" component="h2" gutterBottom align="center">
                     This is an <b>admin dashboard</b>, if you are trying to find the ThemeLibrary API or settings, visit{" "}
-                    <Link href="https://github.com/faf4a/themesApi" color="inherit" underline="always">
+                    <Link href="https://github.com/Equicord/EquiThemesAPI" color="inherit" underline="always">
                         the github repository
                     </Link>{" "}
                     or the plugin settings within Vencord.
